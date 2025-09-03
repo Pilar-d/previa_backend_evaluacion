@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Servicios - Gestión de Proyectos{% endblock %}
+
+{% block content %}
+<section class="services">
+    <div class="container">
+        <h1>Nuestros Servicios</h1>
+        <p>Ofrecemos soluciones integrales para la gestión de proyectos, usuarios y tareas.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Panel de Administración</h3>
+                <p>Accede al panel de administración para gestionar todos los aspectos del sistema.</p>
+                <a href="/admin" class="btn btn-secondary" target="_blank">Acceder al Admin</a>
+            </div>
+            <div class="service-card">
+                <h3>API REST</h3>
+                <p>Utiliza nuestra API para integrar nuestro sistema con otras aplicaciones.</p>
+                <a href="/api" class="btn btn-secondary" target="_blank">Explorar la API</a>
+            </div>
+            <div class="service-card">
+                <h3>Gestión de Usuarios</h3>
+                <p>Administra usuarios, roles y permisos de manera eficiente.</p>
+                <a href="#" class="btn btn-secondary">Más Información</a>
+            </div>
+            <div class="service-card">
+                <h3>Reportes y Análisis</h3>
+                <p>Genera reportes detallados del progreso de proyectos y tareas.</p>
+                <a href="#" class="btn btn-secondary">Más Información</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Quiénes Somos - Gestión de Proyectos{% endblock %}
+
+{% block content %}
+<section class="about">
+    <div class="container">
+        <h1>Quiénes Somos</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Somos una empresa especializada en soluciones de gestión de proyectos, con años de experiencia en el desarrollo de software empresarial.</p>
+                <p>Nuestro equipo está formado por profesionales altamente cualificados en diferentes áreas tecnológicas, comprometidos con ofrecer las mejores soluciones a nuestros clientes.</p>
+                <p>Desarrollamos sistemas personalizados que se adaptan a las necesidades específicas de cada organización, garantizando eficiencia y productividad.</p>
+            </div>
+            <div class="about-image">
+                <img src="{% static 'images/about-team.jpg' %}" alt="Nuestro equipo">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

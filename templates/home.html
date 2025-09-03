@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio - Gestión de Proyectos{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>Gestión Eficiente de Proyectos y Tareas</h1>
+        <p>Optimiza tu workflow con nuestro sistema de gestión de proyectos, usuarios y tareas.</p>
+        <a href="{% url 'services' %}" class="btn btn-primary">Nuestros Servicios</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Características Principales</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Gestión de Usuarios</h3>
+                <p>Administra los permisos y roles de todos los usuarios del sistema.</p>
+            </div>
+            <div class="feature">
+                <h3>Control de Proyectos</h3>
+                <p>Crea, edita y monitorea el progreso de todos tus proyectos.</p>
+            </div>
+            <div class="feature">
+                <h3>Organización de Tareas</h3>
+                <p>Asigna y realiza seguimiento de todas las tareas de tus proyectos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
